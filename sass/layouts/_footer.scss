@@ -1,0 +1,88 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: var(--color-background);
+}
+
+.footer-container {
+    display: flex;
+}
+
+.section-addres-title {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.footer-logo {
+    padding-bottom: 20px;
+    display: flex;
+    font-family: var(--font-ral);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.1923;
+    letter-spacing: 0.03em;
+    color: var(--color-footer-logo);
+    text-decoration: none;
+}
+
+.footer-logo-web {
+    color: var(--color-hover-focus);
+}
+
+.address-list {
+    list-style: none;
+    >.address-list-item:not(:last-child) {
+            margin-bottom: 9px;
+        }
+}
+
+.address-list-item {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.7142;
+    letter-spacing: 0.03em;
+    font-style: normal;
+}
+
+
+.address-address {
+    transition: color var(--transition-hover-focus);
+    color: var(--color-section-title);
+    text-decoration: none;
+    &:hover,
+            &:focus {
+                    color: var(--color-hover-focus);
+                }
+}
+
+.address-mail {
+    transition: color var(--transition-hover-focus);
+    color: var(--color-footer-mail);
+    text-decoration: none;
+    &:hover,
+            &:focus {
+                    color: var(--color-hover-focus);
+                }
+}
+
+.address-tel {
+    transition: color var(--transition-hover-focus);
+    color: var(--color-footer-mail);
+    text-decoration: none;
+    &:hover,
+        &:focus {
+            color: var(--color-hover-focus);
+        }
+}
+
+
+

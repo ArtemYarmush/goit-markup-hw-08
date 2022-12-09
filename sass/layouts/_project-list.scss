@@ -1,0 +1,67 @@
+.project {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.project-items {
+    transition: box-shadow var(--transition-hover-focus);
+    background: var(--color-section-title);
+    flex-basis: calc((100% - 600px) / 3);
+    &:hover {
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+                1px 4px 6px rgba(0, 0, 0, 0.16);
+        }
+}
+
+.project-top {
+    overflow: hidden;
+    position: relative;
+}
+
+.project-top-text {
+    overflow: auto;
+    transition: transform var(--transition-hover-focus);
+    transform: translateY(100%);
+    height: 100%;
+    padding: 63px 24px;
+    background-color: var(--color-overley-bg);
+    top: 0;
+    position: absolute;
+    font-size: 18px;
+    line-height: 1.5555;
+    letter-spacing: 0.03em;
+    color: var(--color-section-title);
+    .project-items:hover & {
+            transform: translateY(0);
+        }
+}
+
+.project-name {
+    border: 1px solid #eeeeee;
+    padding-top: 20px;
+    padding-right: 24px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+}
+
+.prodject-item {
+    max-width: 100%;
+}
+
+.project-title {
+    font-size: 18px;
+    line-height: 2;
+    /* identical to box height, or 200% */
+    letter-spacing: 0.06em;
+    color: var(--color-title);
+}
+
+.project-text {
+    font-size: 16px;
+    line-height: 1.875;
+    /* identical to box height, or 188% */
+    letter-spacing: 0.03em;
+    color: var(--color-text);
+}

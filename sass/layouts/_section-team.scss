@@ -1,0 +1,112 @@
+.team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background: var(--team-background);
+}
+
+.team-title {
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 36px;
+    line-height: 1.1666;
+    letter-spacing: 0.03em;
+    color: var(--color-title);
+}
+
+.team-list {
+    justify-content: space-between;
+    gap: 30px;
+    display: flex;
+    list-style: none;
+}
+
+.team-worcker {
+    background: var(--color-section-title);
+    /* material shadow v1 */
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    max-width: 100%;
+}
+
+.worcker {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.worcker-title {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.1875;
+    /* identical to box height */
+    letter-spacing: 0.03em;
+    color: var(--color-title);
+}
+
+.worcker-text {
+    margin-bottom: 16px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.1875;
+    /* identical to box height */
+    letter-spacing: 0.03em;
+    color: var(--color-text);
+}
+
+.worcker-soc-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.worcker-soc-item {
+    width: 44px;
+    height: 44px;
+}
+
+.worcker-soc-link {
+    transition: background-color var(--transition-hover-focus);
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-section-title);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover,
+        &:focus {
+            background-color: var(--color-hover-focus);
+        }
+}
+
+.worcker-soc-icon {
+    transition: fill var(--transition-hover-focus);
+    fill: var(--icon-corlor);
+    .worcker-soc-link:hover &,
+        .worcker-soc-link:focus & {
+            fill: var(--color-footer-logo);
+        }
+}
+
+.igor {
+    background: url(4853.jpg);
+    border-radius: 0px;
+}
+
+.olga {
+    background: url(5844.jpg);
+    border-radius: 0px;
+}
+
+.mukola {
+    background: url(16166.jpg);
+    border-radius: 0px;
+}
+
+.muhailo {
+    background: url(2968.jpg);
+    border-radius: 0px;
+}

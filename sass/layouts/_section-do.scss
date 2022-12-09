@@ -1,0 +1,61 @@
+.do-container {
+    padding-bottom: 94px;
+}
+
+.do-title {
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 36px;
+    line-height: 1.1666;
+    letter-spacing: 0.03em;
+    color: var(--color-title);
+}
+
+.items {
+    justify-content: space-between;
+    display: flex;
+    list-style: none;
+    >.items-box:not(:last-child) {
+            gap: 30px;
+        }
+}
+
+.items-box {
+    max-width: 100%;
+}
+
+.do-top {
+    position: relative;
+}
+
+.do-top-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    background: rgba(47, 48, 58, 0.8);
+    width: 100%;
+    height: 70px;
+    font-size: 14px;
+    line-height: 1.1428;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--color-section-title);
+}
+
+.box-one {
+    background: url(close-up-image-programer-working-his-desk-office_1098-18707.jpg);
+    mix-blend-mode: normal;
+}
+
+.box-two {
+    background: url(web-ui-designers-are-developing-application-smartphones-team-creators-is-working-interface-mobile-phones_8119-2713.jpg);
+}
+
+.box-thre {
+    background: url(creative-artist-web-design-with-working-colour-selection-graphic-tablet_35674-1119.jpg);
+}
