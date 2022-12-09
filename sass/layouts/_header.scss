@@ -23,7 +23,7 @@
 .header__logo {
     margin-right: 93px;
 }
-.logo-web {
+.header__web {
     color: var(--color-hover-focus);
 }
 
@@ -34,14 +34,14 @@
     display: flex;
 }
 
-.menu-list {
+.menu__list {
     font-size: 14px;
     font-weight: 500;
     line-height: 1.1428;
     letter-spacing: 0.02em;
 }
 
-.menu-studio {
+.menu__studio {
     transition: color var(--transition-hover-focus);
     display: inline-block;
     position: relative;
@@ -55,7 +55,7 @@
     }
 }
 
-.menu-studio.current::after {
+.menu__studio.current::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -67,7 +67,7 @@
     margin-bottom: -32px;
 }
 
-.menu-portfolio {
+.menu__portfolio {
     transition: color var(--transition-hover-focus);
     display: inline-block;
     position: relative;
@@ -81,7 +81,7 @@
     }
 }
 
-.menu-portfolio.current::after {
+.menu__portfolio.current::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -93,7 +93,7 @@
     margin-bottom: -32px;
 }
 
-.menu-contacts {
+.menu__contacts {
     transition: color var(--transition-hover-focus);
     color: var(--color-title);
     text-decoration: none;
@@ -103,37 +103,22 @@
         color: var(--color-hover-focus);
     }
 }
-.list__container {
+.contacts__container {
     align-items: center;
     display: flex;
     list-style: none;
     gap: 30px;
 }
 
-.list-item {
+.contacts__item {
     font-size: 14px;
     font-weight: 500;
     line-height: 1.1428;
     letter-spacing: 0.02em;
 }
 
-.list-mail-icon {
-    width: 16px;
-    height: 12px;
-    margin-right: 10px;
-    fill: currentColor;
-}
-
-.list-tel-icon {
-    width: 10px;
-    height: 16px;
-    margin-right: 10px;
-    fill: currentColor;
-}
-
-.list-contact {
+.contacts__conect {
     transition: color var(--transition-hover-focus);
-    
     color: var(--color-text);
     text-decoration: none;
 
@@ -142,7 +127,22 @@
         color: var(--color-hover-focus);
     }
 }
-.list-contact__container {
-align-items: center;
+
+.contacts__conect-position {
+    align-items: center;
     display: flex;
+}
+
+.contacts__mail-icon {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+.contacts__tel-icon {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    fill: currentColor;
 }
