@@ -1,8 +1,10 @@
 @import './utils/variables';
+@import './utils/common';
 @import './base/reset';
 @import './utils/hide';
+@import './utils/placeholders';
+@import './utils/breakpoints';
 
-@import './components/container';
 @import './components/social-input';
 @import './components/section-join';
 

@@ -1,0 +1,56 @@
+%container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+
+    @media screen and (max-width: 767px) {
+        max-width: 450px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 738px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+    }
+}
+
+%section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    @media screen and (max-width: 1199px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+%contacts {
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+}
+
+%link {
+    text-decoration: none;
+}
+
+%visually-hidden {
+    width: 1px;
+    height: 1px;
+
+    margin: -1px;
+
+    position: absolute;
+    clip: rect(0 0 0 0);
+}
+
+%reset-padding-top {
+    padding-top: 0px;
+}
+
+%reset-padding-bottom {
+    padding-bottom: 0px;
+}

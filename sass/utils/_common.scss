@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+
+    background-color: var(--color-section-title);
+    color: var(--color-text);
+
+    font-family: 'roboto';
+    letter-spacing: 0.03em;
+}
+
+main {
+    @media screen and (max-width: 767px) {
+        padding-top: 60px;
+    }
+
+    @media screen and (min-width: 768px) {
+        padding-top: 80px;
+    }
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+textarea {
+    resize: none;
+}
