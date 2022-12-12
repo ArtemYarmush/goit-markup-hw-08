@@ -1,80 +1,148 @@
+.modal-form {
+    margin-left: auto;
+        margin-right: auto;
+    
+        @media screen and (min-width: $mobile) {
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+    
+    
+        @media screen and (max-width: $tablet-max) {
+            padding-bottom: 40px;
+        }
+    
+        @media screen and (min-width: $desktop) {
+            width: 528px;
+        }
+}
+
+
 .modal-name {
-    display: block;
-    margin-bottom: 4px;
-    font-style: normal;
     font-weight: 400;
-    font-size: 12px;
-    line-height: 1.1666;
-    letter-spacing: 0.01em;
-    color: var(--color-text);
+        font-size: 12px;
+        line-height: 1.16;
+        letter-spacing: 0.01em;
+        color: var(--color-text);
+    
+        margin: 0;
+        padding: 0;
+    
+        text-align: start;
 }
 
 .input-data {
-    position: relative;
+    display: flex;
+    flex-direction: column;
     margin-bottom: 10px;
+    position: relative;
+
+    &:nth-child(4) {
+        margin-bottom: 0px;
+    }
 }
 
 .modal-input {
-    width: 448px;
-    height: 40px;
-    outline: transparent;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    padding: 12px 42px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.1666;
-    letter-spacing: 0.01em;
-    color: var(--color-title);
-    transition: border-color var(--transition-hover-focus);
-    &:focus {
-            border-color: var(--color-hover-focus);
-        }
+
+                margin: 0;
+                padding-top: 12px;
+                padding-bottom: 12px;
+                padding-left: 42px;
+        
+                height: 40px;
+                color: var(--color-title);
+                border: 1px solid rgba(33, 33, 33, 0.2);
+                border-radius: 4px;
+        
+                cursor: pointer;
+                outline: none;
+        
+                transition: border-color var(--transition-hover-focus);
+        
+                .input-data-hover:focus-within & {
+                    border-color: var(--color-hover-focus);
+                }
+        
+                @media screen and (max-width: 479px) {
+                    width: 100%;
+                }
+        
+                @media screen and (min-width: $mobile) {
+                    width: 370px;
+                }
+        
+                @media screen and (min-width: $desktop) {
+                    width: 448px;
+                }
 }
 .modal-icon {
-    position: absolute;
-    left: 12px;
-    top: 50%;
-    transform: translateY(-50%);
-    .modal-input:focus+& {
-            fill: var(--color-hover-focus);
-        }
+
+                position: absolute;
+                top: 50%;
+                left: 14px;
+        
+                width: 18px;
+                height: 18px;
+        
+                transition: fill var(--transition-hover-focus);
+        
+                .input-data-hover:focus-within & {
+                    fill: var(--color-hover-focus);
+                }
 }
 
 .modal-textarea {
-    resize: none;
-    padding: 12px 16px;
-    width: 100%;
-    height: 120px;
-    outline: transparent;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.1666;
-    color: var(--color-title);
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    transition: border-color var(--transition-hover-focus);
-    &:focus {
-            border-color: var(--color-hover-focus);
-        }
+
+                margin: 0;
+                padding: 12px 16px;
+        
+                height: 120px;
+        
+                border: 1px solid rgba(33, 33, 33, 0.2);
+                border-radius: 4px;
+                cursor: pointer;
+                outline: none;
+                color: var(--color-title);
+        
+                transition: border-color var(--transition-hover-focus);
+        
+                &:focus-visible {
+                    border-color: var(--color-hover-focus);
+                }
 }
+
+
 .policy {
     margin-top: 10px;
 }
 
 .check-text {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7142;
-    letter-spacing: 0.03em;
+  
     color: var(--color-text);
     display: flex;
     align-items: center;
     position: relative;
     justify-content: center;
+
+    
+    
+        margin-bottom: 0px;
+    
+        
+    
+        cursor: pointer;
+    
+        @media screen and (max-width: $tablet-max) {
+            margin-top: 20px;
+            font-size: 12px;
+            line-height: 1.16;
+        }
+    
+        @media screen and (min-width: $desktop) {
+            margin-top: 28px;
+            font-size: 14px;
+            line-height: 1.71;
+        }
 }
 
 .check-text span {
@@ -87,45 +155,49 @@
     align-items: center;
     justify-content: center;
     fill: transparent;
+
     .modal-policy:checked+& {
-            background-color: var(--color-hover-focus);
-            fill: var(--color-footer-logo);
-            border-color: transparent;
-        }
-                & {
-                    transition: fill var(--transition-hover-focus);
-                }
+        background-color: var(--color-hover-focus);
+        fill: var(--color-footer-logo);
+        border-color: transparent;
+    }
+
+    & {
+        transition: fill var(--transition-hover-focus);
+    }
+
+    
 }
 .policy-contract {
-    margin-left: 5px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7142;
     letter-spacing: 0.03em;
-    color: var(--color-hover-focus);
-    position: relative;
-    display: inline-block;
-    transition: color var(--transition-hover-focus);
+        text-decoration-line: underline;
+        color: var(--color-hover-focus);
+        margin-left: 7px;
 }
 .modal-button-send {
-    cursor: pointer;
-    min-width: 200px;
-    height: 50px;
-    outline: transparent;
-    background: var(--color-hover-focus);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.875;
-    letter-spacing: 0.06em;
-    color: var(--color-footer-logo);
-    border: 0;
-    display: block;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    margin-top: 30px;
-    transition: background var(--transition-hover-focus);
+
+
+    width: 200px;
+        height: 50px;
+        margin-top: 30px;
+    
+        background: var(--color-hover-focus);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        border: none;
+    
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.87;
+        letter-spacing: 0.06em;
+        color:var(--color-footer-logo);
+    
+        cursor: pointer;
+    
+        transition: background var(--transition-hover-focus);
+    
+        &:focus,
+        &:hover {
+            background: var(--color-hover-focus);
+        }
 }

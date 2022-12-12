@@ -1,66 +1,157 @@
+
+
 .backdrop {
-    top: 0;
-    background: var(--backdrop-bg);
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    transition: opacity var(--transition-hover-focus),
-        visibility var(--transition-hover-focus);
+
+        position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        
+            width: 100%;
+            height: 100%;
+        
+            background-color: var(--backdrop-bg);
+        
+            overflow-y: scroll;
+        
+            opacity: 1;
+            transition: opacity var(--transition-hover-focus),
+                    visibility var(--transition-hover-focus);
+        
+            &.is-hidden {
+                opacity: 0;
+                pointer-events: none;
+            }
+        
+            @media screen and (max-width: $mobile-max) {
+                padding-top: 93px;
+                padding-bottom: 94px;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        
+            @media screen and (max-width: $tablet-max) {
+                padding-top: 208px;
+                padding-bottom: 207px;
+                padding-left: 159px;
+                padding-right: 159px;
+            }
+        
+            @media screen and (min-width: $desktop) {
+                padding-top: 221px;
+                padding-bottom: 222px;
+                padding-left: 536px;
+                padding-right: 536px;
+            }
 }
 
 .modal {
+
     position: absolute;
-    transform: translate(-50%, -50%) translateX(0px);
-    transition: transform var(--transition-hover-focus);
-    padding: 40px;
-    top: 50%;
-    left: 50%;
-    width: 528px;
-    min-height: 581px;
-    background: var(--color-section-title);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%;
+    
+        background: var(--color-section-title);
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+            0px 1px 1px rgba(0, 0, 0, 0.14),
+            0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+    
+        transform: scale(1);
+        transition: transform var(--transition-hover-focus);
+    
+        align-items: center;
+        justify-content: center;
+    
+        .backdrop.is-hidden & {
+            transform: scale(0.9);
+        }
+    
+        @media screen and (max-width: 479px) {
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+    
+        @media screen and (max-width: $tablet-max) {
+            width: 100%;
+            max-width: 450px;
+            padding-top: 8px;
+        }
+    
+        @media screen and (min-width: $desktop) {
+            width: 528px;
+            height: 581px;
+        }
 }
 
-.is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-}
+//.is-hidden {
+  //  opacity: 0;
+ //   visibility: hidden;
+   // pointer-events: none;
+//}
 
-.backdrop.is-hidden .modal {
-    transform: translate(-50%, -50%) translateX(-600px);
-}
+//.backdrop.is-hidden .modal {
+//    transform: translate(-50%, -50%) translateX(-600px);
+//}
 
 .modal-button {
-    cursor: pointer;
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
+
     display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--color-footer-logo);
-    border: 1px solid rgba(0, 0, 0, 0.1);
+        width: 30px;
+        height: 30px;
+    
+        @media screen and (max-width: 479px) {
+            margin-right: 0px;
+        }
+    
+        margin-right: 8px;
+        margin-left: auto;
+        margin-bottom: auto;
+    
+        border-radius: 50%;
+        background: var(--color-footer-logo);
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+    
+        align-items: center;
+        justify-content: center;
+    
+        transition: transform color var(--transition-hover-focus);
+    
+        &:focus,
+        &:hover {
+            color: var(--color-hover-focus);
+        }
+    
+        @media screen and (min-width: $desktop) {
+            margin-top: 8px;
+        }
 }
 
 .modal-button-icon {
-    transition: fill var(--transition-hover-focus);
-    .modal-button:hover &,
-        .modal-button:focus & {
-            fill: var(--color-hover-focus);
-        }
+    fill: currentColor;
 }
+
 .modal-title {
+    margin-top: 2px;
     margin-bottom: 12px;
+
     font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
-    text-align: center;
     letter-spacing: 0.03em;
+    text-align: center;
+
     color: var(--color-title);
+
+    @media screen and (max-width: $tablet-max) {
+
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    @media screen and (min-width: $desktop) {
+       
+    }
 }
