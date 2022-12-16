@@ -87,39 +87,39 @@ img {
   word-wrap: normal !important;
 }
 
-.features__container, .solutions__container, .header__container {
+.do-container, .features__container, .solutions__container, .header__container {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
 }
 @media screen and (max-width: 767px) {
-  .features__container, .solutions__container, .header__container {
+  .do-container, .features__container, .solutions__container, .header__container {
     max-width: 450px;
   }
 }
 @media screen and (min-width: 768px) {
-  .features__container, .solutions__container, .header__container {
+  .do-container, .features__container, .solutions__container, .header__container {
     width: 738px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .features__container, .solutions__container, .header__container {
+  .do-container, .features__container, .solutions__container, .header__container {
     width: 1200px;
   }
 }
 
-.features, .solutions {
+.do, .features, .solutions {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 @media screen and (max-width: 1199px) {
-  .features, .solutions {
+  .do, .features, .solutions {
     padding-top: 60px;
     padding-bottom: 60px;
   }
 }
 
-.features__list, .list-links, .contacts__container, .menu__container {
+.do-top-title, .items, .features__list, .list-links, .contacts__container, .menu__container {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -127,6 +127,10 @@ img {
 
 .list-links__link, .contacts__conect, .menu__contacts, .menu__portfolio, .menu__studio {
   text-decoration: none;
+}
+
+.do {
+  padding-top: 0px;
 }
 
 .email-list {
@@ -783,30 +787,42 @@ img {
   margin-bottom: 0px;
 }
 
-.do-container {
-  padding-bottom: 94px;
+@media screen and (max-width: 1199px) {
+  .do {
+    display: none;
+  }
 }
 
 .do-title {
-  margin-bottom: 50px;
-  text-align: center;
+  font-weight: 700;
   font-size: 36px;
-  line-height: 1.1666;
-  letter-spacing: 0.03em;
-  color: var(--color-title);
+  line-height: 1.2;
+  margin: 0px;
+  text-align: center;
 }
 
 .items {
-  justify-content: space-between;
   display: flex;
-  list-style: none;
-}
-.items > .items-box:not(:last-child) {
-  gap: 30px;
+  justify-content: center;
 }
 
 .items-box {
-  max-width: 100%;
+  padding-top: 50px;
+  padding-bottom: 0px;
+  margin-right: 30px;
+  position: relative;
+  z-index: -1;
+}
+.items-box:last-child {
+  margin-right: 0px;
+}
+.items-box::before {
+  content: "";
+  width: 370px;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+  position: absolute;
+  bottom: 0;
 }
 
 .do-top {
@@ -814,34 +830,15 @@ img {
 }
 
 .do-top-title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  bottom: 0;
-  left: 0;
-  position: absolute;
-  background: rgba(47, 48, 58, 0.8);
-  width: 100%;
-  height: 70px;
+  font-weight: 700;
   font-size: 14px;
-  line-height: 1.1428;
-  text-align: center;
-  letter-spacing: 0.03em;
+  line-height: 1.14;
   text-transform: uppercase;
   color: var(--color-section-title);
-}
-
-.box-one {
-  background: url(close-up-image-programer-working-his-desk-office_1098-18707.jpg);
-  mix-blend-mode: normal;
-}
-
-.box-two {
-  background: url(web-ui-designers-are-developing-application-smartphones-team-creators-is-working-interface-mobile-phones_8119-2713.jpg);
-}
-
-.box-thre {
-  background: url(creative-artist-web-design-with-working-colour-selection-graphic-tablet_35674-1119.jpg);
+  position: absolute;
+  bottom: 27px;
+  left: 50%;
+  translate: -50%;
 }
 
 .team {
