@@ -1,0 +1,123 @@
+.email-list {
+  @media screen and (max-width: $tablet-max) {
+    margin-top: 60px;
+    text-align: center;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: block;
+    margin-top: 10px;
+    margin-left: 93px;
+  }
+}
+
+.join-title {
+  font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--color-section-title)
+}
+
+.email-list-group {
+  margin-top: 20px;
+    outline: none;
+  
+    @media screen and (max-width: $tablet-max) {}
+  
+    @media screen and (min-width: $desktop) {
+      display: flex;
+      position: relative;
+    }
+}
+
+.email-list-input {
+
+  color: var(--color-footer-mail);
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  height: 50px;
+  
+    padding-left: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+  
+    color: rgba(255, 255, 255, 0.6);
+    background-color: var(--color-background);
+    outline: none;
+  
+    &:focus-visible {
+      border-color: var(--color-hover-focus);
+    }
+  
+    @media screen and (max-width: $tablet-max) {
+      width: 100%;
+      max-width: 450px;
+      margin-top: 20px;
+    }
+  
+    @media screen and (min-width: $desktop) {
+      width: 358px;
+      margin-right: 12px;
+    }
+}
+
+.email-list-button {
+ 
+
+  cursor: pointer;
+    background: var(--color-hover-focus);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);;
+    border-radius: 4px;
+    border: none;
+  
+    text-align: center;
+  
+    width: 200px;
+    height: 50px;
+  
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--color-footer-logo);
+  
+    &:focus,
+    &:hover {
+      background: var(--color-hover-focus);
+    }
+  
+    @media screen and (max-width: $tablet-max) {
+      position: relative;
+      margin-top: 20px;
+      padding-right: 28px;
+    }
+  
+    @media screen and (min-width: $desktop) {
+      padding-right: 28px;
+    }
+}
+
+
+.email-list-icon {
+
+  position: absolute;
+    top: 13px;
+    width: 24px;
+    height: 24px;
+  
+    @media screen and (max-width: $tablet-max) {
+      left: 155px;
+    }
+  
+    @media screen and (min-width: $desktop) {
+      right: 28px;
+    }
+}

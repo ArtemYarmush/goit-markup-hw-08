@@ -562,10 +562,10 @@
         </div>
       </section>
       <!--section customers-->
-      <section class="customers">
-        <div class="container">
+      <section class="customers section">
+        <div class="customers-container container">
           <h2 class="customers-title">Постійні клієнти</h2>
-          <ul class="customers-list">
+          <ul class="customers-list contacts">
             <li class="customers-item">
               <a class="customers-link"
                 ><svg class="customers-icon" width="106" height="60">
@@ -611,14 +611,14 @@
       <div class="container footer-container">
         <section class="section-addres">
           <h2 class="section-addres-title">section-addres</h2>
-          <a class="footer-logo" lang="en" href="./index.html"
+          <a class="footer-logo link" lang="en" href="./index.html"
             ><span class="footer-logo-web">Web</span>Studio</a
           >
-          <address>
-            <ul class="address-list">
+          <address class="address-requisites">
+            <ul class="address-list contacts">
               <li class="address-list-item">
                 <a
-                  class="address-address"
+                  class="address-address link"
                   href="https://goo.gl/maps/a4rHkYme5bzuFaWH6"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -626,12 +626,12 @@
                 >
               </li>
               <li class="address-list-item">
-                <a class="address-mail" href="mailto:info@devstudio.com"
+                <a class="address-contacts link" href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
                 >
               </li>
               <li class="address-list-item">
-                <a class="address-tel" href="tel:+30961111111"
+                <a class="address-contacts link" href="tel:+30961111111"
                   >+38 096 111 11 11</a
                 >
               </li>
@@ -641,7 +641,7 @@
         <!--join-->
         <section class="join">
           <h3 class="join-title">приєднуйтесь</h3>
-          <ul class="join-soc-list">
+          <ul class="join-soc-list contacts">
             <li class="join-soc-item">
               <a class="join-soc-link soc-link" href="#"
                 ><svg class="join-soc-icon" width="20" height="20">
@@ -673,16 +673,15 @@
         <!--email-list-->
         <section class="email-list">
           <h2 class="section-addres-title">section-addres</h2>
+          <form class="email-list-form">
           <strong class="join-title">Підпишіться на розсилку</strong>
           <div class="email-list-group">
-            <form class="email-list-form">
               <input
                 type="text"
                 name="user-email"
                 class="email-list-input"
                 placeholder="E-mail"
               />
-            </form>
             <button class="email-list-button" type="submit">
               Підписатися
               <svg class="email-list-icon">
@@ -690,10 +689,10 @@
               </svg>
             </button>
           </div>
+          </form>
         </section>
       </div>
     </footer>
-    
     </div>
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>

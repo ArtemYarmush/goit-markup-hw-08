@@ -1,49 +1,75 @@
 .join {
-    margin-left: 70px;
+    @media screen and (max-width: $mobile-max) {
+            margin-top: 60px;
+        }
+    
+        @media screen and (min-width: $tablet) {
+            margin-left: 105px;
+        }
+    
+        @media screen and (max-width: $tablet-max) {
+            text-align: center;
+        }
+    
+        @media screen and (min-width: $desktop) {
+            margin-left: 70px;
+            margin-top: 10px;
+        }
 }
 
 .join-title {
-    text-align: left;
-    margin-bottom: 20px;
-    font-family: "Roboto";
-    font-style: normal;
+    
+
     font-weight: 700;
-    font-size: 14px;
-    line-height: 1.1428;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--color-footer-logo);
-    display: block;
-    justify-content: center;
-    align-items: center;
+        font-size: 14px;
+        line-height: 1.14;
+        text-transform: uppercase;
+    
+        color: var(--color-footer-logo);
+    
+        @media screen and (min-width: $desktop) {
+            margin-left: 7px;
+        }
 }
 
 .join-soc-list {
+    @extend %contacts;
     display: flex;
-    gap: 10px;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    
+       
 }
 
-.join-soc-item {
-    width: 44px;
-    height: 44px;
-}
+
 
 .join-soc-link {
-    transition: background-color var(--transition-hover-focus);
-    width: 100%;
-    height: 100%;
-    background-color: var(--color-bg-icon);
-    border-radius: 50%;
+   
+
     display: flex;
+    width: 44px;
+    height: 44px;
+
+    fill: var(--color-footer-logo);
+    background-color: var(--color-bg-icon);
+
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+     border-radius: 50%;
+    background-position: 50% 50%;
+
     align-items: center;
     justify-content: center;
-    &:hover,
-        &:focus {
-            background-color: var(--color-hover-focus);
-        }
-    & {
-                    fill: var(--color-footer-logo);
-                }
+
+    transition: background-color var(--transition-hover-focus);
+    &:focus,
+    &:hover {
+        background-color: var(--color-hover-focus);
+    }
 }
 
 
