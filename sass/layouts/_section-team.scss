@@ -1,112 +1,134 @@
 .team {
-    padding-top: 94px;
-    padding-bottom: 94px;
-    background: var(--team-background);
+    background-color: var(--team-background);
+        @extend %section;
+}
+
+.team-container {
+    @extend %container
 }
 
 .team-title {
-    margin-bottom: 50px;
-    text-align: center;
-    font-size: 36px;
-    line-height: 1.1666;
-    letter-spacing: 0.03em;
-    color: var(--color-title);
+
+    margin-bottom: 30px;
+        margin-top: 0px;
+        text-align: center;
+        font-weight: 700;
+    
+        @media screen and (max-width: $tablet-max) {
+            font-size: 28px;
+            line-height: 1.17;
+        }
+    
+        @media screen and (min-width: $desktop) {
+            font-size: 36px;
+            line-height: 1.16;
+            margin-bottom: 50px;
+        }
 }
 
 .team-list {
-    justify-content: space-between;
-    gap: 30px;
-    display: flex;
-    list-style: none;
+    @extend %contacts;
+    
+        @media screen and (min-width: $tablet) {
+            display: flex;
+            flex-wrap: wrap;
+        };
 }
 
 .team-worcker {
-    background: var(--color-section-title);
-    /* material shadow v1 */
-
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-    max-width: 100%;
+    margin-right: 30px;
+        margin-bottom: 30px;
+    
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+                0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+        background-color: var(--color-section-title);
+    
+        @media screen and (max-width: $mobile-max) {
+            margin-right: 0px;
+    
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    
+        @media screen and (min-width: $tablet) {
+            flex-basis: calc((100% - 2 * 15px) / 2);
+    
+            @media screen and (max-width: $tablet-max) {
+                &:nth-child(even) {
+                    margin-right: 0;
+                }
+            }
+    
+            &:nth-last-child(-n + 2) {
+                margin-bottom: 0;
+            }
+        }
+    
+        @media screen and (min-width: $desktop) {
+            flex-basis: calc((100% - 6 * 15px) / 4);
+            margin-right: 30px;
+            margin-bottom: 0;
+    
+            &:last-child {
+                margin-right: 0;
+            }
+        }
 }
 
 .worcker {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    text-align: center;
 }
 
 .worcker-title {
-    margin-bottom: 10px;
-    text-align: center;
-    font-size: 16px;
+    
+
     font-weight: 500;
-    line-height: 1.1875;
-    /* identical to box height */
-    letter-spacing: 0.03em;
-    color: var(--color-title);
+        font-size: 16px;
+        line-height: 1.2;
+    
+        margin-top: 30px;
+        margin-bottom: 0px;
 }
 
 .worcker-text {
-    margin-bottom: 16px;
-    text-align: center;
-    font-size: 16px;
-    line-height: 1.1875;
-    /* identical to box height */
-    letter-spacing: 0.03em;
+
     color: var(--color-text);
+        font-size: 16px;
+        line-height: 1.2;
+    
+        margin-top: 10px;
+        margin-bottom: 0px;
 }
 
 .worcker-soc-list {
+    @extend %contacts;
     display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-
-.worcker-soc-item {
-    width: 44px;
-    height: 44px;
+        align-items: center;
+        justify-content: center;
+        
 }
 
 .worcker-soc-link {
-    transition: background-color var(--transition-hover-focus);
-    width: 100%;
-    height: 100%;
-    background-color: var(--color-section-title);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background-position: 50% 50%;
+     width: 44px;
+     height: 44px;
+     margin: 16px 5px 30px 5px;
+        
+     color: var(--icon-color);
     border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    &:hover,
-        &:focus {
-            background-color: var(--color-hover-focus);
-        }
+     transition: color background-color var(--transition-hover-focus);
+     &:focus,
+     &:hover {
+         background-color: var(--color-hover-focus);
+         color: var(--color-footer-logo);
+  }
 }
 
 .worcker-soc-icon {
-    transition: fill var(--transition-hover-focus);
-    fill: var(--icon-corlor);
-    .worcker-soc-link:hover &,
-        .worcker-soc-link:focus & {
-            fill: var(--color-footer-logo);
-        }
-}
-
-.igor {
-    background: url(4853.jpg);
-    border-radius: 0px;
-}
-
-.olga {
-    background: url(5844.jpg);
-    border-radius: 0px;
-}
-
-.mukola {
-    background: url(16166.jpg);
-    border-radius: 0px;
-}
-
-.muhailo {
-    background: url(2968.jpg);
-    border-radius: 0px;
+  fill: currentColor; 
 }

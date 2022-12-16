@@ -314,24 +314,38 @@
         </div>
       </section>
       <!--team-->
-      <section class="team">
+      <section class="team section">
         <div class="container team-container">
           <h2 class="team-title">Наша команда</h2>
-          <ul class="team-list">
+          <ul class="team-list contacts">
             <li class="team-worcker">
-              <img
-                class="igor"
-                src="./images/igor.jpg"
-                width="270"
-                height="260"
-                alt="Ігор Дем'яненко"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/igor270.jpg 1x,
+                    ./images/igor270@2x.jpg 2x"
+                  media="(min-width: 1200px)"/>
+                <source
+                  srcset="
+                    ./images/igor354.jpg 1x,
+                    ./images/igor354@2x.jpg 2x"
+                  media="(min-width: 768px)"/>
+                <source
+                  srcset="
+                    ./images/igor450.jpg 1x,
+                    ./images/igor450@2x.jpg 2x"
+                  media="(max-width: 767px)"/>
+                <img
+                  src="./images/igor450.jpg"
+                  alt="igor"/>
+              </picture>
               <div class="worcker">
                 <h3 class="worcker-title">Ігор Дем'яненко</h3>
                 <p class="worcker-text" lang="en">Product Designer</p>
-                <ul class="worcker-soc-list">
+              </div>
+                <ul class="worcker-soc-list contacts">
                   <li class="worcker-soc-item">
-                    <a class="worcker-soc-link soc-link" href="#"
+                    <a class="worcker-soc-link" href="#"
                       ><svg class="worcker-soc-icon" width="20" height="20">
                         <use
                           href="./images/symbol-defs.svg#icon-instagram"
@@ -339,7 +353,7 @@
                     ></a>
                   </li>
                   <li class="worcker-soc-item">
-                    <a class="worcker-soc-link soc-link" href="#"
+                    <a class="worcker-soc-link" href="#"
                       ><svg class="worcker-soc-icon" width="20" height="20">
                         <use
                           href="./images/symbol-defs.svg#icon-twitter"
@@ -347,7 +361,7 @@
                     ></a>
                   </li>
                   <li class="worcker-soc-item">
-                    <a class="worcker-soc-link soc-link" href="#"
+                    <a class="worcker-soc-link" href="#"
                       ><svg class="worcker-soc-icon" width="20" height="20">
                         <use
                           href="./images/symbol-defs.svg#icon-facebook"
@@ -355,7 +369,7 @@
                     ></a>
                   </li>
                   <li class="worcker-soc-item">
-                    <a class="worcker-soc-link soc-link" href="#"
+                    <a class="worcker-soc-link" href="#"
                       ><svg class="worcker-soc-icon" width="20" height="20">
                         <use
                           href="./images/symbol-defs.svg#icon-linkedin"
@@ -363,22 +377,35 @@
                     ></a>
                   </li>
                 </ul>
-              </div>
             </li>
             <li class="team-worcker">
-              <img
-                class="olga"
-                src="./images/olga.jpg"
-                width="270"
-                height="260"
-                alt="Ольга Рєпіна"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/olga270.jpg 1x,
+                    ./images/olga270@2x.jpg 2x"
+                  media="(min-width: 1200px)"/>
+                <source
+                  srcset="
+                    ./images/olga354.jpg 1x,
+                    ./images/olga354@2x.jpg 2x"
+                  media="(min-width: 768px)"/>
+                <source
+                  srcset="
+                    ./images/olga450.jpg 1x,
+                    ./images/olga450@2x.jpg 2x"
+                  media="(max-width: 767px)"/>
+                <img
+                  src="./images/olga270.jpg"
+                  alt="olga"/>
+                </picture>
               <div class="worcker">
                 <h3 class="worcker-title">Ольга Рєпіна</h3>
                 <p class="worcker-text" lang="en">Frontend Developer</p>
-                <ul class="worcker-soc-list">
+              </div>
+                <ul class="worcker-soc-list contacts">
                   <li class="worcker-soc-item">
-                    <a class="worcker-soc-link soc-link" href="#"
+                    <a class="worcker-soc-link" href="#"
                       ><svg class="worcker-soc-icon" width="20" height="20">
                         <use
                           href="./images/symbol-defs.svg#icon-instagram"
@@ -386,7 +413,7 @@
                     ></a>
                   </li>
                   <li class="worcker-soc-item">
-                    <a class="worcker-soc-link soc-link" href="#"
+                    <a class="worcker-soc-link" href="#"
                       ><svg class="worcker-soc-icon" width="20" height="20">
                         <use
                           href="./images/symbol-defs.svg#icon-twitter"
@@ -394,7 +421,7 @@
                     ></a>
                   </li>
                   <li class="worcker-soc-item">
-                    <a class="worcker-soc-link soc-link" href="#"
+                    <a class="worcker-soc-link" href="#"
                       ><svg class="worcker-soc-icon" width="20" height="20">
                         <use
                           href="./images/symbol-defs.svg#icon-facebook"
@@ -402,7 +429,7 @@
                     ></a>
                   </li>
                   <li class="worcker-soc-item">
-                    <a class="worcker-soc-link soc-link" href="#"
+                    <a class="worcker-soc-link" href="#"
                       ><svg class="worcker-soc-icon" width="20" height="20">
                         <use
                           href="./images/symbol-defs.svg#icon-linkedin"
@@ -410,22 +437,35 @@
                     ></a>
                   </li>
                 </ul>
-              </div>
             </li>
             <li class="team-worcker">
-              <img
-                class="mukola"
-                src="./images/mukola.jpg"
-                width="270"
-                height="260"
-                alt="Микола Тарасов"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/mukola270.jpg 1x,
+                    ./images/mukola270@2x.jpg 2x"
+                  media="(min-width: 1200px)"/>
+                <source
+                  srcset="
+                    ./images/mukola354.jpg 1x,
+                    ./images/mukola354@2x.jpg 2x"
+                  media="(min-width: 768px)"/>
+                <source
+                  srcset="
+                    ./images/mukola450.jpg 1x,
+                    ./images/mukola450@2x.jpg 2x"
+                  media="(max-width: 767px)"/>
+                <img
+                  src="./images/mukola270.jpg"
+                  alt="mukola"/>
+              </picture>
               <div class="worcker">
                 <h3 class="worcker-title">Микола Тарасов</h3>
                 <p class="worcker-text" lang="en">Marketing</p>
-                <ul class="worcker-soc-list">
+                </div>
+                <ul class="worcker-soc-list contacts">
                   <li class="worcker-soc-item">
-                    <a class="worcker-soc-link soc-link" href="#"
+                    <a class="worcker-soc-link" href="#"
                       ><svg class="worcker-soc-icon" width="20" height="20">
                         <use
                           href="./images/symbol-defs.svg#icon-instagram"
@@ -433,7 +473,7 @@
                     ></a>
                   </li>
                   <li class="worcker-soc-item">
-                    <a class="worcker-soc-link soc-link" href="#"
+                    <a class="worcker-soc-link" href="#"
                       ><svg class="worcker-soc-icon" width="20" height="20">
                         <use
                           href="./images/symbol-defs.svg#icon-twitter"
@@ -441,7 +481,7 @@
                     ></a>
                   </li>
                   <li class="worcker-soc-item">
-                    <a class="worcker-soc-link soc-link" href="#"
+                    <a class="worcker-soc-link" href="#"
                       ><svg class="worcker-soc-icon" width="20" height="20">
                         <use
                           href="./images/symbol-defs.svg#icon-facebook"
@@ -449,7 +489,7 @@
                     ></a>
                   </li>
                   <li class="worcker-soc-item">
-                    <a class="worcker-soc-link soc-link" href="#"
+                    <a class="worcker-soc-link" href="#"
                       ><svg class="worcker-soc-icon" width="20" height="20">
                         <use
                           href="./images/symbol-defs.svg#icon-linkedin"
@@ -457,22 +497,35 @@
                     ></a>
                   </li>
                 </ul>
-              </div>
             </li>
             <li class="team-worcker">
-              <img
-                class="muhailo"
-                src="./images/muhailo.jpg"
-                width="270"
-                height="260"
-                alt="Михайло Єрмаков"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/muhailo270.jpg 1x,
+                    ./images/muhailo270@2x.jpg 2x"
+                  media="(min-width: 1200px)"/>
+                <source
+                  srcset="
+                    ./images/muhailo354.jpg 1x,
+                    ./images/muhailo354@2x.jpg 2x"
+                  media="(min-width: 768px)"/>
+                <source
+                  srcset="
+                    ./images/muhailo450.jpg 1x,
+                    ./images/muhailo450@2x.jpg 2x"
+                  media="(max-width: 767px)"/>
+                <img
+                  src="./images/muhailo270.jpg"
+                  alt="muhailo"/>
+              </picture> 
               <div class="worcker">
                 <h3 class="worcker-title">Михайло Єрмаков</h3>
                 <p class="worcker-text" lang="en">UI Designer</p>
-                <ul class="worcker-soc-list">
+                </div>
+                <ul class="worcker-soc-list contacts">
                   <li class="worcker-soc-item">
-                    <a class="worcker-soc-link soc-link" href="#"
+                    <a class="worcker-soc-link" href="#"
                       ><svg class="worcker-soc-icon" width="20" height="20">
                         <use
                           href="./images/symbol-defs.svg#icon-instagram"
@@ -480,7 +533,7 @@
                     ></a>
                   </li>
                   <li class="worcker-soc-item">
-                    <a class="worcker-soc-link soc-link" href="#"
+                    <a class="worcker-soc-link" href="#"
                       ><svg class="worcker-soc-icon" width="20" height="20">
                         <use
                           href="./images/symbol-defs.svg#icon-twitter"
@@ -488,7 +541,7 @@
                     ></a>
                   </li>
                   <li class="worcker-soc-item">
-                    <a class="worcker-soc-link soc-link" href="#"
+                    <a class="worcker-soc-link" href="#"
                       ><svg class="worcker-soc-icon" width="20" height="20">
                         <use
                           href="./images/symbol-defs.svg#icon-facebook"
@@ -496,7 +549,7 @@
                     ></a>
                   </li>
                   <li class="worcker-soc-item">
-                    <a class="worcker-soc-link soc-link" href="#"
+                    <a class="worcker-soc-link" href="#"
                       ><svg class="worcker-soc-icon" width="20" height="20">
                         <use
                           href="./images/symbol-defs.svg#icon-linkedin"
@@ -504,7 +557,6 @@
                     ></a>
                   </li>
                 </ul>
-              </div>
             </li>
           </ul>
         </div>
