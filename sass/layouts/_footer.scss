@@ -1,146 +1,137 @@
 .footer {
+  background: var(--color-background);
+  padding-top: 60px;
+  padding-bottom: 60px;
 
-    background: var(--color-background);
-    padding-top: 60px;
-    padding-bottom: 60px;
-
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .footer-container {
-    @extend %container;
-    
-    @media screen and (min-width: $tablet) {
-        display: flex;
+  @extend %container;
 
-        @media screen and (max-width: $tablet-max) {
-            flex-wrap: wrap;
-            justify-content: center;
-        }
+  @media screen and (min-width: $tablet) {
+    display: flex;
+
+    @media screen and (max-width: $tablet-max) {
+      flex-wrap: wrap;
+      justify-content: center;
     }
+  }
 }
 
 .section-addres {
-    @media screen and (max-width: $tablet-max) {
-        text-align: center;
-    }
-    
-    @media screen and (min-width: $desktop) {
-        display: block;
-    }
+  @media screen and (max-width: $tablet-max) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: block;
+  }
 }
 
 .section-addres-title {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .footer-logo {
-    
+  @extend %link;
+  color: var(--color-footer-logo);
+  font-family: "raleway";
+  font-weight: 700;
 
-    @extend %link;
-    color: var(--color-footer-logo);
-    font-family: 'raleway';
-    font-weight: 700;
-    
-    @media screen and (max-width: $tablet-max) {
-        font-size: 24px;
-        line-height: 1.16;
-    }
-    
+  @media screen and (max-width: $tablet-max) {
+    font-size: 24px;
+    line-height: 1.16;
+  }
 
-
-    @media screen and (min-width: $desktop) {
-        margin-right: 93px;
-        font-size: 26px;
-        line-height: 1.19;
-    }
+  @media screen and (min-width: $desktop) {
+    margin-right: 93px;
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .footer-logo-web {
-    color: var(--color-hover-focus);
+  color: var(--color-hover-focus);
 }
 
 .address-requisites {
-    @media screen and (min-width: $desktop) {
-        margin-top: 20px;
-        }
-    
-    @media screen and (max-width: $tablet-max) {
-        margin-top: 28px;
-    }
-    
+  @media screen and (min-width: $desktop) {
+    margin-top: 20px;
+  }
+
+  @media screen and (max-width: $tablet-max) {
+    margin-top: 28px;
+  }
 }
 
 .address-list {
-    @extend %contacts;
+  @extend %contacts;
 }
 
 .address-list-item {
-      @media screen and (max-width: $tablet-max) {
-        margin-top: 0px;
-        margin-bottom: 12px;
+  @media screen and (max-width: $tablet-max) {
+    margin-top: 0px;
+    margin-bottom: 12px;
 
-        &:last-child {
-                margin-bottom: 0px;
-            }
+    &:last-child {
+      margin-bottom: 0px;
     }
+  }
 
-    @media screen and (min-width: $desktop) {
-        margin-bottom: 9px;
-    }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 9px;
+  }
 }
 
+.address-address {
+  @extend %link;
+  font-size: 14px;
+  line-height: 1.7;
+  font-style: normal;
+  transition: color var(--transition-hover-focus);
+  color: var(--color-section-title);
 
-.address-address { 
-    @extend %link;
-    font-size: 14px;
-    line-height: 1.7;
-    font-style: normal;
-    transition: color var(--transition-hover-focus);
-    color: var(--color-section-title);
-    
-    &:hover,
-            &:focus {
-                    color: var(--color-hover-focus);
-                }
+  &:hover,
+  &:focus {
+    color: var(--color-hover-focus);
+  }
 }
 
 .address-mail {
-    transition: color var(--transition-hover-focus);
-    color: var(--color-footer-mail);
-    text-decoration: none;
-    &:hover,
-            &:focus {
-                    color: var(--color-hover-focus);
-                }
+  transition: color var(--transition-hover-focus);
+  color: var(--color-footer-mail);
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    color: var(--color-hover-focus);
+  }
 }
 
 .address-contacts {
-    @extend %link;
-    color: var(--color-footer-mail);
+  @extend %link;
+  color: var(--color-footer-mail);
 
-    font-size: 14px;
-    line-height: 1.7;
-    font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  font-style: normal;
 
-    transition: color var(--transition-hover-focus);
+  transition: color var(--transition-hover-focus);
 
-    @extend %link;
+  @extend %link;
 
-    &:hover, &:focus {
-        color: var(--color-hover-focus);
-    }
+  &:hover,
+  &:focus {
+    color: var(--color-hover-focus);
+  }
 }
-
-
-

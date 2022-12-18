@@ -1,138 +1,148 @@
 .solutions {
-    @extend %section;
-    
-        background-color: var(--color-background);
-    
-        padding-top: 118px;
-        padding-bottom: 118px;
-    
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-    
-        text-align: center;
-    
-        @media screen and (max-width: $mobile-max) {
-            background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-                    rgba(47, 48, 58, 0.4)),
-                url(../images/img-bg480.jpg);
-            height: 400px;
-            // max-width: 480px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-    
-        @media screen and (min-width: $tablet) {
-            background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-                    rgba(47, 48, 58, 0.4)), url(../images/img-bg768.jpg);
-            height: 400px;
-            // max-width: 768px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-    
-        @media screen and (min-width: $desktop) {
-            background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-                    rgba(47, 48, 58, 0.4)), url(../images/img-bg1600.jpg);
-            height: 600px;
-            // max-width: 1600px;
-            margin-left: auto;
-            margin-right: auto;
-            padding-top: 200px;
-            padding-bottom: 200px;
-        }
+  @extend %section;
+
+  background-color: var(--color-background);
+
+  padding-top: 118px;
+  padding-bottom: 118px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  text-align: center;
+
+  @media screen and (max-width: $mobile-max) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/img-bg480.jpg);
+    height: 400px;
+    // max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: $tablet) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/img-bg768.jpg);
+    height: 400px;
+    // max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: $desktop) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/img-bg1600.jpg);
+    height: 600px;
+    // max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+
+@media screen and (max-width: $mobile-max) {
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/img-bg480@2x.jpg);
     }
-    
-    @media screen and (max-width: $mobile-max) {
-    
-        @media screen and (min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
-            .hero {
-                background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-                        rgba(47, 48, 58, 0.4)),
-                    url(../images/img-bg480@2x.jpg);
-            }
-        }
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/img-bg768@2x.jpg);
     }
-    
-    @media screen and (min-width: $tablet) {
-    
-        @media screen and (min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
-            .hero {
-                background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-                        rgba(47, 48, 58, 0.4)), url(../images/img-bg768@2x.jpg);
-            }
-        }
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/img-bg1600@2x.jpg);
     }
-    
-    @media screen and (min-width: $desktop) {
-    
-        @media screen and (min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
-            .hero {
-                background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-                        rgba(47, 48, 58, 0.4)), url(../images/img-bg1600@2x.jpg);
-            }
-        }
+  }
 }
 
 .solutions__container {
-
-    @extend %container;
+  @extend %container;
 }
 
 .solutions__title {
-        color: var(--color-section-title);
-    
-        text-align: center;
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
-    
-        margin-bottom: 30px;
-        margin-top: 0px;
-    
-        @media screen and (max-width: $tablet-max) {
-            font-size: 26px;
-            line-height: 1.61;
-        }
-    
-        @media screen and (min-width: $desktop) {
-            font-size: 44px;
-            line-height: 1.36;
-        }
+  color: var(--color-section-title);
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  margin-bottom: 30px;
+  margin-top: 0px;
+
+  @media screen and (max-width: $tablet-max) {
+    font-size: 26px;
+    line-height: 1.61;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .solutions__btn {
+  color: var(--color-section-title);
+  background-color: var(--color-hover-focus);
 
-                color: var(--color-section-title);
-                background-color:  var(--color-hover-focus);
-        
-                font-family: 'Roboto';
-                font-weight: 700;
-                font-size: 16px;
-                line-height: 1.9;
-                letter-spacing: 0.06em;
-        
-                cursor: pointer;
-                border-radius: 4px;
-                border: 1px solid transparent;
-                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-        
-                padding-top: 10px;
-                padding-bottom: 10px;
-                width: 200px;
-                height: 50px;
-        
-        
-                transition-property: background-color;
-                transition-duration: 250ms;
-                transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        
-                &:hover {
-                    background-color: var(--color-hover-focus);
-                }
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 200px;
+  height: 50px;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    background-color: var(--color-hover-focus);
+  }
 }
