@@ -25,7 +25,7 @@
     <header class="header">
       <div class="container header__container">
         <nav class="header__nav">
-          <a class="logo header__logo" lang="en" href="./index.html"
+          <a class="header__logo link" lang="en" href="./index.html"
             ><span class="header__web">Web</span>Studio</a
           >
           <button
@@ -86,7 +86,7 @@
               </li>
               <li class="contacts__item">
                 <a
-                  class="link contacts__conect contacts__conect--position"
+                  class="link contacts__conect contacts__conect-position"
                   href="tel:+30961111111"
                 >
                   <svg class="contacts__icon" width="10" height="16">
@@ -98,19 +98,19 @@
               </li>
             </ul>
             <ul class="contacts list-links">
-            <li class="list-links__item">
-              <a class="list-links__link" href="instagram.com">Instagram</a>
-            </li>
-            <li class="list-links__item">
-              <a class="list-links__link" href="twitter.com">Twitter</a>
-            </li>
-            <li class="list-links__item">
-              <a class="list-links__link" href="facebook.com">Facebook</a>
-            </li class="list-links__item">
-            <li class="list-links__item">
-              <a class="list-links__link" href="linkedin.com">linkedin</a>
-            </li>
-          </ul>
+              <li class="list-links__item">
+                <a class="list-links__link" href="instagram.com">Instagram</a>
+              </li>
+              <li class="list-links__item">
+                <a class="list-links__link" href="twitter.com">Twitter</a>
+              </li>
+              <li class="list-links__item">
+                <a class="list-links__link" href="facebook.com">Facebook</a>
+              </li>
+              <li class="list-links__item">
+                <a class="list-links__link" href="linkedin.com">linkedin</a>
+              </li>
+            </ul>
           </div>
         </nav>
       </div>
@@ -119,7 +119,9 @@
       <!--section-solutions-->
       <section class="solutions section">
         <div class="container solutions__container">
-          <h1 class="solutions__title">Ефективні рішення для вашого бізнесу</h1>
+          <h1 class="solutions__title">
+            Ефективні рішення для<br />вашого бізнесу
+          </h1>
           <button
             class="solutions__btn solutions__btn-position"
             type="button"
@@ -128,90 +130,101 @@
             Замовити послугу
           </button>
           <!--modal-->
-    <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <button class="modal-button" type="button" data-modal-close>
-          <svg class="modal-button-icon" width="11" height="11">
-            <use href="./images/symbol-defs.svg#icon-vectorx"></use>
-          </svg>
-        </button>
-        <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
-        <!--form-->
-        <form class="modal-form">
-          <div class="input-data">
-          <label for="user-name" class="modal-name">Ім'я</label>
-          <div class="input-data-hover">
-            <input
-              type="text"
-              name="user-name"
-              class="modal-input"
-              id="user-name"
-              required
-            /><svg class="modal-icon" width="18" height="18">
-              <use
-                href="./images/symbol-defs.svg#icon-person-black-18dp1"
-              ></use>
-            </svg>
-            </div>
-          </div>
-          <div class="input-data">
-          <label for="user-name" class="modal-name">Телефон</label>
-          <div class="input-data-hover">
-            <input
-              type="tel"
-              name="user-tel"
-              class="modal-input"
-              id="user-tel"
-              required
-            /><svg class="modal-icon" width="18" height="18">
-              <use href="./images/symbol-defs.svg#icon-phone-black-18dp1"></use>
-            </svg>
-            </div>
-          </div>
-          <div class="input-data">
-          <label for="user-name" class="modal-name">Пошта</label>
-          <div class="input-data-hover">
-            <input
-              type="email"
-              name="user-email"
-              class="modal-input"
-              id="user-email"
-              required
-            /><svg class="modal-icon" width="18" height="18">
-              <use href="./images/symbol-defs.svg#icon-email-black-18dp1"></use>
-            </svg>
-            </div>
-          </div>
-          <div class="input-data">
-          <label for="user-name" class="modal-name">Коментар</label>
-            <textarea
-              name="user-comment"
-              class="modal-textarea"
-              id="user-comment"
-              rows="7"
-              placeholder="Введіть текст"
-            ></textarea>
-          </div>
-          <div class="policy">
-            <input
-              type="checkbox"
-              name="policy"
-              class="modal-policy hide"
-              id="policy"
-            />
-            <label for="policy" class="check-text">
-              <span>
-                <svg class="check-icon" width="16" height="15">
-                  <use href="./images/symbol-defs.svg#icon-icon-check"></use>
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              <button class="modal-button" type="button" data-modal-close>
+                <svg class="modal-button-icon" width="11" height="11">
+                  <use href="./images/symbol-defs.svg#icon-vectorx"></use>
                 </svg>
-              </span>
-              Погоджуюся з розсилкою та приймаю
-              <a class="policy-contract" href="#">Умови договору</a></label
-            >
+              </button>
+              <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
+              <!--form-->
+              <form class="modal-form">
+                <div class="input-data">
+                  <label for="user-name" class="modal-name">Ім'я</label>
+                  <div class="input-data-hover">
+                    <input
+                      type="text"
+                      name="user-name"
+                      class="modal-input"
+                      id="user-name"
+                      required
+                    /><svg class="modal-icon" width="18" height="18">
+                      <use
+                        href="./images/symbol-defs.svg#icon-person-black-18dp1"
+                      ></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="input-data">
+                  <label for="user-name" class="modal-name">Телефон</label>
+                  <div class="input-data-hover">
+                    <input
+                      type="tel"
+                      name="user-tel"
+                      class="modal-input"
+                      id="user-tel"
+                      required
+                    /><svg class="modal-icon" width="18" height="18">
+                      <use
+                        href="./images/symbol-defs.svg#icon-phone-black-18dp1"
+                      ></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="input-data">
+                  <label for="user-name" class="modal-name">Пошта</label>
+                  <div class="input-data-hover">
+                    <input
+                      type="email"
+                      name="user-email"
+                      class="modal-input"
+                      id="user-email"
+                      required
+                    /><svg class="modal-icon" width="18" height="18">
+                      <use
+                        href="./images/symbol-defs.svg#icon-email-black-18dp1"
+                      ></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="input-data">
+                  <label for="user-name" class="modal-name">Коментар</label>
+                  <textarea
+                    name="user-comment"
+                    class="modal-textarea"
+                    id="user-comment"
+                    rows="7"
+                    placeholder="Введіть текст"
+                  ></textarea>
+                </div>
+                <div class="policy">
+                  <input
+                    type="checkbox"
+                    name="policy"
+                    class="modal-policy hide"
+                    id="policy"
+                  />
+                  <label for="policy" class="check-text">
+                    <span>
+                      <svg class="check-icon" width="16" height="15">
+                        <use
+                          href="./images/symbol-defs.svg#icon-icon-check"
+                        ></use>
+                      </svg>
+                    </span>
+                    Погоджуюся з розсилкою та приймаю
+                    <a class="policy-contract" href="#"
+                      >Умови договору</a
+                    ></label
+                  >
+                </div>
+                <button type="submit" class="modal-button-send">
+                  Відправити
+                </button>
+              </form>
+            </div>
           </div>
-          <button type="submit" class="modal-button-send">Відправити</button>
-        </form>
-      </div>
         </div>
       </section>
       <!--features-->
@@ -221,10 +234,8 @@
             <li class="features__item">
               <div class="features__item-container">
                 <svg class="features__icon" width="70" height="70">
-                    <use
-                      href="./images/symbol-defs.svg#icon-antenna1"
-                    ></use></svg
-                >
+                  <use href="./images/symbol-defs.svg#icon-antenna1"></use>
+                </svg>
               </div>
               <h3 class="features__title features__title-position">
                 УВАГА ДО ДЕТАЛЕЙ
@@ -237,8 +248,8 @@
             <li class="features__item">
               <div class="features__item-container">
                 <svg class="features__icon" width="70" height="70">
-                    <use href="./images/symbol-defs.svg#icon-clock"></use></svg
-                >
+                  <use href="./images/symbol-defs.svg#icon-clock"></use>
+                </svg>
               </div>
               <h3 class="features__title features__title-position">
                 ПУНКТУАЛЬНІСТЬ
@@ -251,8 +262,8 @@
             <li class="features__item">
               <div class="features__item-container">
                 <svg class="features__icon" width="70" height="70">
-                    <use href="./images/symbol-defs.svg#icon-clock"></use></svg
-                >
+                  <use href="./images/symbol-defs.svg#icon-clock"></use>
+                </svg>
               </div>
               <h3 class="features__title features__title-position">
                 ПЛАНУВАННЯ
@@ -264,8 +275,8 @@
             <li class="features__item">
               <div class="features__item-container">
                 <svg class="features__icon" width="70" height="70">
-                    <use href="./images/symbol-defs.svg#icon-clock"></use></svg
-                >
+                  <use href="./images/symbol-defs.svg#icon-clock"></use>
+                </svg>
               </div>
               <h3 class="features__title features__title-position">
                 СУЧАСНІ ТЕХНОЛОГІЇ
@@ -284,31 +295,31 @@
           <h2 class="do-title">Чим ми займаємося</h2>
           <ul class="items contacts">
             <li class="items-box">
-                <img
-                  class="box-one"
-                  src="./images/box1.jpg"
-                  width="370"
-                  alt="пишемо код"
-                />
-                <h3 class="do-top-title">Десктопні додатки</h3>
+              <img
+                class="box-one"
+                src="./images/box1.jpg"
+                width="370"
+                alt="пишемо код"
+              />
+              <h3 class="do-top-title">Десктопні додатки</h3>
             </li>
             <li class="items-box">
-                <img
-                  class="box-two"
-                  src="./images/box2.jpg"
-                  width="370"
-                  alt="оптимізуємо вивід зображення"
-                />
-                <h3 class="do-top-title">Мобільні додатки</h3>
+              <img
+                class="box-two"
+                src="./images/box2.jpg"
+                width="370"
+                alt="оптимізуємо вивід зображення"
+              />
+              <h3 class="do-top-title">Мобільні додатки</h3>
             </li>
             <li class="items-box">
-                <img
-                  class="box-thre"
-                  src="./images/box3.jpg"
-                  width="370"
-                  alt="підбираємо палітру кольорів"
-                />
-                <h3 class="do-top-title">Дизайнерські рішення</h3>
+              <img
+                class="box-thre"
+                src="./images/box3.jpg"
+                width="370"
+                alt="підбираємо палітру кольорів"
+              />
+              <h3 class="do-top-title">Дизайнерські рішення</h3>
             </li>
           </ul>
         </div>
@@ -321,242 +332,240 @@
             <li class="team-worcker">
               <picture>
                 <source
-                  srcset="
-                    ./images/igor270.jpg 1x,
-                    ./images/igor270@2x.jpg 2x"
-                  media="(min-width: 1200px)"/>
+                  srcset="./images/igor270.jpg 1x, ./images/igor270@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
                 <source
-                  srcset="
-                    ./images/igor354.jpg 1x,
-                    ./images/igor354@2x.jpg 2x"
-                  media="(min-width: 768px)"/>
+                  srcset="./images/igor354.jpg 1x, ./images/igor354@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
                 <source
-                  srcset="
-                    ./images/igor450.jpg 1x,
-                    ./images/igor450@2x.jpg 2x"
-                  media="(max-width: 767px)"/>
-                <img
-                  src="./images/igor450.jpg"
-                  alt="igor"/>
+                  srcset="./images/igor450.jpg 1x, ./images/igor450@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <img src="./images/igor450.jpg" alt="igor" />
               </picture>
               <div class="worcker">
                 <h3 class="worcker-title">Ігор Дем'яненко</h3>
                 <p class="worcker-text" lang="en">Product Designer</p>
               </div>
-                <ul class="worcker-soc-list contacts">
-                  <li class="worcker-soc-item">
-                    <a class="worcker-soc-link" href="#"
-                      ><svg class="worcker-soc-icon" width="20" height="20">
-                        <use
-                          href="./images/symbol-defs.svg#icon-instagram"
-                        ></use></svg
-                    ></a>
-                  </li>
-                  <li class="worcker-soc-item">
-                    <a class="worcker-soc-link" href="#"
-                      ><svg class="worcker-soc-icon" width="20" height="20">
-                        <use
-                          href="./images/symbol-defs.svg#icon-twitter"
-                        ></use></svg
-                    ></a>
-                  </li>
-                  <li class="worcker-soc-item">
-                    <a class="worcker-soc-link" href="#"
-                      ><svg class="worcker-soc-icon" width="20" height="20">
-                        <use
-                          href="./images/symbol-defs.svg#icon-facebook"
-                        ></use></svg
-                    ></a>
-                  </li>
-                  <li class="worcker-soc-item">
-                    <a class="worcker-soc-link" href="#"
-                      ><svg class="worcker-soc-icon" width="20" height="20">
-                        <use
-                          href="./images/symbol-defs.svg#icon-linkedin"
-                        ></use></svg
-                    ></a>
-                  </li>
-                </ul>
+              <ul class="worcker-soc-list contacts">
+                <li class="worcker-soc-item">
+                  <a class="worcker-soc-link" href="#"
+                    ><svg class="worcker-soc-icon" width="20" height="20">
+                      <use
+                        href="./images/symbol-defs.svg#icon-instagram"
+                      ></use></svg
+                  ></a>
+                </li>
+                <li class="worcker-soc-item">
+                  <a class="worcker-soc-link" href="#"
+                    ><svg class="worcker-soc-icon" width="20" height="20">
+                      <use
+                        href="./images/symbol-defs.svg#icon-twitter"
+                      ></use></svg
+                  ></a>
+                </li>
+                <li class="worcker-soc-item">
+                  <a class="worcker-soc-link" href="#"
+                    ><svg class="worcker-soc-icon" width="20" height="20">
+                      <use
+                        href="./images/symbol-defs.svg#icon-facebook"
+                      ></use></svg
+                  ></a>
+                </li>
+                <li class="worcker-soc-item">
+                  <a class="worcker-soc-link" href="#"
+                    ><svg class="worcker-soc-icon" width="20" height="20">
+                      <use
+                        href="./images/symbol-defs.svg#icon-linkedin"
+                      ></use></svg
+                  ></a>
+                </li>
+              </ul>
             </li>
             <li class="team-worcker">
               <picture>
                 <source
-                  srcset="
-                    ./images/olga270.jpg 1x,
-                    ./images/olga270@2x.jpg 2x"
-                  media="(min-width: 1200px)"/>
+                  srcset="./images/olga270.jpg 1x, ./images/olga270@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
                 <source
-                  srcset="
-                    ./images/olga354.jpg 1x,
-                    ./images/olga354@2x.jpg 2x"
-                  media="(min-width: 768px)"/>
+                  srcset="./images/olga354.jpg 1x, ./images/olga354@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
                 <source
-                  srcset="
-                    ./images/olga450.jpg 1x,
-                    ./images/olga450@2x.jpg 2x"
-                  media="(max-width: 767px)"/>
-                <img
-                  src="./images/olga270.jpg"
-                  alt="olga"/>
-                </picture>
+                  srcset="./images/olga450.jpg 1x, ./images/olga450@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <img src="./images/olga270.jpg" alt="olga" />
+              </picture>
               <div class="worcker">
                 <h3 class="worcker-title">Ольга Рєпіна</h3>
                 <p class="worcker-text" lang="en">Frontend Developer</p>
               </div>
-                <ul class="worcker-soc-list contacts">
-                  <li class="worcker-soc-item">
-                    <a class="worcker-soc-link" href="#"
-                      ><svg class="worcker-soc-icon" width="20" height="20">
-                        <use
-                          href="./images/symbol-defs.svg#icon-instagram"
-                        ></use></svg
-                    ></a>
-                  </li>
-                  <li class="worcker-soc-item">
-                    <a class="worcker-soc-link" href="#"
-                      ><svg class="worcker-soc-icon" width="20" height="20">
-                        <use
-                          href="./images/symbol-defs.svg#icon-twitter"
-                        ></use></svg
-                    ></a>
-                  </li>
-                  <li class="worcker-soc-item">
-                    <a class="worcker-soc-link" href="#"
-                      ><svg class="worcker-soc-icon" width="20" height="20">
-                        <use
-                          href="./images/symbol-defs.svg#icon-facebook"
-                        ></use></svg
-                    ></a>
-                  </li>
-                  <li class="worcker-soc-item">
-                    <a class="worcker-soc-link" href="#"
-                      ><svg class="worcker-soc-icon" width="20" height="20">
-                        <use
-                          href="./images/symbol-defs.svg#icon-linkedin"
-                        ></use></svg
-                    ></a>
-                  </li>
-                </ul>
+              <ul class="worcker-soc-list contacts">
+                <li class="worcker-soc-item">
+                  <a class="worcker-soc-link" href="#"
+                    ><svg class="worcker-soc-icon" width="20" height="20">
+                      <use
+                        href="./images/symbol-defs.svg#icon-instagram"
+                      ></use></svg
+                  ></a>
+                </li>
+                <li class="worcker-soc-item">
+                  <a class="worcker-soc-link" href="#"
+                    ><svg class="worcker-soc-icon" width="20" height="20">
+                      <use
+                        href="./images/symbol-defs.svg#icon-twitter"
+                      ></use></svg
+                  ></a>
+                </li>
+                <li class="worcker-soc-item">
+                  <a class="worcker-soc-link" href="#"
+                    ><svg class="worcker-soc-icon" width="20" height="20">
+                      <use
+                        href="./images/symbol-defs.svg#icon-facebook"
+                      ></use></svg
+                  ></a>
+                </li>
+                <li class="worcker-soc-item">
+                  <a class="worcker-soc-link" href="#"
+                    ><svg class="worcker-soc-icon" width="20" height="20">
+                      <use
+                        href="./images/symbol-defs.svg#icon-linkedin"
+                      ></use></svg
+                  ></a>
+                </li>
+              </ul>
             </li>
             <li class="team-worcker">
               <picture>
                 <source
                   srcset="
-                    ./images/mukola270.jpg 1x,
-                    ./images/mukola270@2x.jpg 2x"
-                  media="(min-width: 1200px)"/>
+                    ./images/mukola270.jpg    1x,
+                    ./images/mukola270@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
                 <source
                   srcset="
-                    ./images/mukola354.jpg 1x,
-                    ./images/mukola354@2x.jpg 2x"
-                  media="(min-width: 768px)"/>
+                    ./images/mukola354.jpg    1x,
+                    ./images/mukola354@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
                 <source
                   srcset="
-                    ./images/mukola450.jpg 1x,
-                    ./images/mukola450@2x.jpg 2x"
-                  media="(max-width: 767px)"/>
-                <img
-                  src="./images/mukola270.jpg"
-                  alt="mukola"/>
+                    ./images/mukola450.jpg    1x,
+                    ./images/mukola450@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img src="./images/mukola270.jpg" alt="mukola" />
               </picture>
               <div class="worcker">
                 <h3 class="worcker-title">Микола Тарасов</h3>
                 <p class="worcker-text" lang="en">Marketing</p>
-                </div>
-                <ul class="worcker-soc-list contacts">
-                  <li class="worcker-soc-item">
-                    <a class="worcker-soc-link" href="#"
-                      ><svg class="worcker-soc-icon" width="20" height="20">
-                        <use
-                          href="./images/symbol-defs.svg#icon-instagram"
-                        ></use></svg
-                    ></a>
-                  </li>
-                  <li class="worcker-soc-item">
-                    <a class="worcker-soc-link" href="#"
-                      ><svg class="worcker-soc-icon" width="20" height="20">
-                        <use
-                          href="./images/symbol-defs.svg#icon-twitter"
-                        ></use></svg
-                    ></a>
-                  </li>
-                  <li class="worcker-soc-item">
-                    <a class="worcker-soc-link" href="#"
-                      ><svg class="worcker-soc-icon" width="20" height="20">
-                        <use
-                          href="./images/symbol-defs.svg#icon-facebook"
-                        ></use></svg
-                    ></a>
-                  </li>
-                  <li class="worcker-soc-item">
-                    <a class="worcker-soc-link" href="#"
-                      ><svg class="worcker-soc-icon" width="20" height="20">
-                        <use
-                          href="./images/symbol-defs.svg#icon-linkedin"
-                        ></use></svg
-                    ></a>
-                  </li>
-                </ul>
+              </div>
+              <ul class="worcker-soc-list contacts">
+                <li class="worcker-soc-item">
+                  <a class="worcker-soc-link" href="#"
+                    ><svg class="worcker-soc-icon" width="20" height="20">
+                      <use
+                        href="./images/symbol-defs.svg#icon-instagram"
+                      ></use></svg
+                  ></a>
+                </li>
+                <li class="worcker-soc-item">
+                  <a class="worcker-soc-link" href="#"
+                    ><svg class="worcker-soc-icon" width="20" height="20">
+                      <use
+                        href="./images/symbol-defs.svg#icon-twitter"
+                      ></use></svg
+                  ></a>
+                </li>
+                <li class="worcker-soc-item">
+                  <a class="worcker-soc-link" href="#"
+                    ><svg class="worcker-soc-icon" width="20" height="20">
+                      <use
+                        href="./images/symbol-defs.svg#icon-facebook"
+                      ></use></svg
+                  ></a>
+                </li>
+                <li class="worcker-soc-item">
+                  <a class="worcker-soc-link" href="#"
+                    ><svg class="worcker-soc-icon" width="20" height="20">
+                      <use
+                        href="./images/symbol-defs.svg#icon-linkedin"
+                      ></use></svg
+                  ></a>
+                </li>
+              </ul>
             </li>
             <li class="team-worcker">
               <picture>
                 <source
                   srcset="
-                    ./images/muhailo270.jpg 1x,
-                    ./images/muhailo270@2x.jpg 2x"
-                  media="(min-width: 1200px)"/>
+                    ./images/muhailo270.jpg    1x,
+                    ./images/muhailo270@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
                 <source
                   srcset="
-                    ./images/muhailo354.jpg 1x,
-                    ./images/muhailo354@2x.jpg 2x"
-                  media="(min-width: 768px)"/>
+                    ./images/muhailo354.jpg    1x,
+                    ./images/muhailo354@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
                 <source
                   srcset="
-                    ./images/muhailo450.jpg 1x,
-                    ./images/muhailo450@2x.jpg 2x"
-                  media="(max-width: 767px)"/>
-                <img
-                  src="./images/muhailo270.jpg"
-                  alt="muhailo"/>
-              </picture> 
+                    ./images/muhailo450.jpg    1x,
+                    ./images/muhailo450@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img src="./images/muhailo270.jpg" alt="muhailo" />
+              </picture>
               <div class="worcker">
                 <h3 class="worcker-title">Михайло Єрмаков</h3>
                 <p class="worcker-text" lang="en">UI Designer</p>
-                </div>
-                <ul class="worcker-soc-list contacts">
-                  <li class="worcker-soc-item">
-                    <a class="worcker-soc-link" href="#"
-                      ><svg class="worcker-soc-icon" width="20" height="20">
-                        <use
-                          href="./images/symbol-defs.svg#icon-instagram"
-                        ></use></svg
-                    ></a>
-                  </li>
-                  <li class="worcker-soc-item">
-                    <a class="worcker-soc-link" href="#"
-                      ><svg class="worcker-soc-icon" width="20" height="20">
-                        <use
-                          href="./images/symbol-defs.svg#icon-twitter"
-                        ></use></svg
-                    ></a>
-                  </li>
-                  <li class="worcker-soc-item">
-                    <a class="worcker-soc-link" href="#"
-                      ><svg class="worcker-soc-icon" width="20" height="20">
-                        <use
-                          href="./images/symbol-defs.svg#icon-facebook"
-                        ></use></svg
-                    ></a>
-                  </li>
-                  <li class="worcker-soc-item">
-                    <a class="worcker-soc-link" href="#"
-                      ><svg class="worcker-soc-icon" width="20" height="20">
-                        <use
-                          href="./images/symbol-defs.svg#icon-linkedin"
-                        ></use></svg
-                    ></a>
-                  </li>
-                </ul>
+              </div>
+              <ul class="worcker-soc-list contacts">
+                <li class="worcker-soc-item">
+                  <a class="worcker-soc-link" href="#"
+                    ><svg class="worcker-soc-icon" width="20" height="20">
+                      <use
+                        href="./images/symbol-defs.svg#icon-instagram"
+                      ></use></svg
+                  ></a>
+                </li>
+                <li class="worcker-soc-item">
+                  <a class="worcker-soc-link" href="#"
+                    ><svg class="worcker-soc-icon" width="20" height="20">
+                      <use
+                        href="./images/symbol-defs.svg#icon-twitter"
+                      ></use></svg
+                  ></a>
+                </li>
+                <li class="worcker-soc-item">
+                  <a class="worcker-soc-link" href="#"
+                    ><svg class="worcker-soc-icon" width="20" height="20">
+                      <use
+                        href="./images/symbol-defs.svg#icon-facebook"
+                      ></use></svg
+                  ></a>
+                </li>
+                <li class="worcker-soc-item">
+                  <a class="worcker-soc-link" href="#"
+                    ><svg class="worcker-soc-icon" width="20" height="20">
+                      <use
+                        href="./images/symbol-defs.svg#icon-linkedin"
+                      ></use></svg
+                  ></a>
+                </li>
+              </ul>
             </li>
           </ul>
         </div>
@@ -626,7 +635,9 @@
                 >
               </li>
               <li class="address-list-item">
-                <a class="address-contacts link" href="mailto:info@devstudio.com"
+                <a
+                  class="address-contacts link"
+                  href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
                 >
               </li>
@@ -671,29 +682,28 @@
           </ul>
         </section>
         <!--email-list-->
-        <section class="email-list">
-          <h2 class="section-addres-title">section-addres</h2>
-          <form class="email-list-form">
-          <strong class="join-title">Підпишіться на розсилку</strong>
+        <form class="email-list-form">
+          <label class="email-list-title" for="user-email"
+            >Підпишіться на розсилку</label
+          >
           <div class="email-list-group">
-              <input
-                type="text"
-                name="user-email"
-                class="email-list-input"
-                placeholder="E-mail"
-              />
+            <input
+              class="email-list-input"
+              type="text"
+              name="user-email"
+              id="user-email"
+              placeholder="E-mail"
+            />
             <button class="email-list-button" type="submit">
               Підписатися
-              <svg class="email-list-icon">
+              <svg class="email-list-icon" width="24" height="24">
                 <use href="./images/symbol-defs.svg#icon-icon-send"></use>
               </svg>
             </button>
           </div>
-          </form>
-        </section>
+        </form>
       </div>
     </footer>
-    </div>
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
   </body>

@@ -1,13 +1,9 @@
 @import './utils/variables';
-@import './utils/common';
-@import './base/reset';
-@import './utils/hide';
+@import './utils/reset';
 @import './utils/placeholders';
 @import './utils/breakpoints';
 
-@import './components/social-input';
-@import './components/section-join';
-
+@import './layouts/section-join';
 @import './layouts/header';
 @import './layouts/section-solutions';
 @import './layouts/section-features';
