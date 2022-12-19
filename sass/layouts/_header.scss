@@ -63,9 +63,9 @@
 }
 
 .menu-btn {
-  display: block;
-  margin: 0;
-  padding: 0;
+  position: absolute;
+  top: 10px;
+  right: 15px;
   border: none;
   background-color: transparent;
 
@@ -102,24 +102,23 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
   @media screen and (max-width: $mobile-max) {
     display: none;
 
     &.is-open {
-      display: block;
-      position: absolute;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      position: fixed;
+      align-items: flex-start;
       top: 0;
       left: 50%;
       translate: -50%;
+      width: 100%;
+      height: 100%;
 
-      overflow: scroll;
-      max-width: 480px;
-      width: 100vw;
-      height: 100vh;
-
-      padding-top: 48px;
-      padding-left: 40px;
-      padding-right: 40px;
+      padding: 48px 40px;
 
       background: var(--color-section-title);
     }
@@ -128,10 +127,6 @@
 
 .menu__container {
   @extend %contacts;
-
-  @media screen and (max-width: $mobile-max) {
-    margin-bottom: 366px;
-  }
 
   @media screen and (min-width: $tablet) {
     display: flex;
